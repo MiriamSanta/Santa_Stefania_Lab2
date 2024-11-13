@@ -25,5 +25,6 @@ namespace Santa_Stefania_Lab2.Data
                 .HasForeignKey(b => b.AuthorID)
                 .OnDelete(DeleteBehavior.Cascade); // Setează comportamentul la ștergere
         }
+        public DbSet<Santa_Stefania_Lab2.Models.Category> Category { get; set; } = default!;
     }
 }
